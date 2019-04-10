@@ -22,7 +22,7 @@ $f3->set('DEBUG', 3);
 //define a default route
 $f3->route('GET /', function()
 {
-    echo '<h1>Hola World!</h1>';
+    echo '<h1>Hola!</h1>';
 });
 
 //run fat-free
