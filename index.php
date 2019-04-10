@@ -22,7 +22,9 @@ $f3->set('DEBUG', 3);
 //define a default route
 $f3->route('GET /', function()
 {
-    echo '<h1>Hola!</h1>';
+    //display a view
+    $view = new Template();
+    echo $view->render('views/home2.html');
 });
 
 //run fat-free
