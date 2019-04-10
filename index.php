@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: quill
- * Date: 4/8/2019
- * Time: 2:16 PM
+ * Date: 4/10/2019
+ * Time: 1:13 PM
  */
 
 //turn on error reporting
@@ -13,8 +13,11 @@ error_reporting(E_ALL);
 //require autoload file
 require_once('vendor/autoload.php');
 
-//create an instance of the base class
+//instantiate Fat-Free with an instance of the base class
 $f3 = Base::instance();
+
+//turn on Fat-Free error reporting
+$f3->set('DEBUG', 3);
 
 //define a default route
 $f3->route('GET /', function()
